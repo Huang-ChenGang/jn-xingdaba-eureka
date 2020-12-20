@@ -1,13 +1,9 @@
 eureka:
-  instance:
-    hostname: localhost
   client:
-    service-url:
-      defaultZone: http://localhost:8761/jn-xingdaba-eureka-dev/
     register-with-eureka: false
     fetch-registry: false
 spring:
   application:
-    name: jn-xingdaba-eureka-dev
+    name: xingdaba-eureka
 server:
   port: 8761
