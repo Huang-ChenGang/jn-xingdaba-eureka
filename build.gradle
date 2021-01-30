@@ -13,7 +13,14 @@ ext {
 }
 
 repositories {
-    mavenCentral()
+    mavenLocal()
+    maven {
+        url "http://118.25.184.76:8081/nexus/content/groups/oobusGroup/"
+        credentials {
+            username NexusUser
+            password NexusPwd
+        }
+    }
 }
 
 dependencyManagement {
